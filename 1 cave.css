@@ -1,0 +1,10 @@
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png') !important;
+	/* filter: none; */
+}
+.lionImage img:first-child {
+visibility: hidden;
+}
+.lionImage {
+background: url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png') no-repeat;
+}
