@@ -1,0 +1,1103 @@
+ @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+
+:root {
+    --lightpurple: #e23c3c;
+    --lightpurple70: #e23c3ccf;
+    --darkpurple: #921717;
+    --lightblue: #584545;
+	--lightblue70: #584545c4;
+    --lightblue50: #5845458a;
+	--darkblue: #362727;
+	--darkblue70: #362727b5;
+	--darkblue50: #36272799;
+	--lightwhite: #eaebef;
+	--lightwhite70: #eaebefa3;
+	--lightpink: #871919;
+	--lightpink70: #871919b5;
+	--lightpink50: #8719198a;
+	--darkpink: #500b0b;
+	--darkpink70: #500b0bc7;
+	--darkpink50: #500b0b99;
+	--darkgray: #16161a;
+	--cream: #7c0e0e;
+	--cream80: #7c0e0ec9;
+	--cream60: #7c0e0e8f;
+	--white: #ffffff;
+	
+  }
+
+
+/*mobile background*/
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://github.com/ghostsofsteel/heaven/blob/main/Netherworld-bicubic-ezgif.com-crop.png?raw=true') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    background-size: cover;
+    font-family: "Prata", serif;
+    color: var(--lightpurple) !important;
+	  
+  }
+     html:not(.nolayout) body:after {
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:160vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url('https://github.com/ghostsofsteel/heaven/blob/main/Netherworld-bicubic-ezgif.com-crop.png?raw=true') center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+      background-size: cover;
+      font-family: "Prata", serif;
+      color: var(--lightpurple) !important;
+	  
+  }
+	 .boxtopper {
+	padding: none;
+	float: right;
+	margin: -200px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	z-index: 4;
+	margin-right: 250px;
+		 pointer-events:none;
+}
+}
+/* desktop background */
+@media screen and (min-width: 801px){
+body {
+	background: url('https://github.com/ghostsofsteel/heaven/blob/main/Netherworld-bicubic.png?raw=true') center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	 -webkit-background-size: cover; /* safari may need this */
+	font-family: "Prata", serif;
+	font-size: 18px !important;
+	color: var(--lightpurple) !important;
+}
+ *{
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur7.cur), auto !important;} /* End https://www.cursors-4u.com */
+  }
+
+@media screen and (min-width: 768px){
+	 .boxtopper {
+	padding: none;
+	float: right;
+	margin: -155px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	z-index: 4;
+	margin-right: 320px;
+	pointer-events:none;
+}
+}
+/* chat details */
+div#chatMessageContainer {
+	border: 0px ridge;
+	border-radius: 10px !important;
+	box-shadow: 1px 1px 5px var(--darkgray);
+}
+
+
+.s-chat-message:nth-child(even) {
+	background: var(--lightblue) !important;
+	color: var(--lightpurple)!important;
+	font-size: 14px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	box-shadow: var(--darkblue) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray)!important;
+	border: none !important;
+}
+.s-chat-message:nth-child(odd) {
+	background: var(--lightpurple) !important;
+	color: var(--darkblue) !important;
+	font-size: 14px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	box-shadow: var(--darkpurple) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border: none !important;
+}
+.s-chat-message__pinned {
+	background: var(--lightblue) !important;
+	color: var(--lightpurple)!important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	box-shadow: var(--darkblue) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border: none !important;
+}
+.s-chat-message_timestamp {
+	color: var(--lightpink)!important;
+	font-size: 12px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+/* channel tabs */
+button#label_currentChannel {	
+	border: 0 ridge !important;
+	border-radius: 5px !important;
+	color: var(--cream)!important;
+	font-size: 14px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	background: var(--lightpink) !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray)!important;
+}
+/* chat buttons */
+#btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
+	filter: grayscale() brightness(400%);
+}
+
+
+/*logo replacer*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://github.com/ghostsofsteel/heaven/blob/main/New%20Project%20(55).png?raw=true');
+	width:190px;
+	margin:-30px;
+	pointer-events:none;
+}
+	/* all caves image*/
+div.cave-grid>img {
+	content: url('https://github.com/ghostsofsteel/heaven/blob/main/05%20(3).jpg?raw=true')!important;
+	padding-left: 0%;
+	height: 140px;	
+	width: 260px;
+	opacity: 0.7;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px !important;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+	transition: 1.5s;
+}
+div.cave-grid>img:hover{
+	opacity: 1;
+	overflow: hidden;
+	transition: 0.8s !important;
+}
+div.cave-grid>img[src$="nestingbanner.png"] {
+	content: url('https://github.com/ghostsofsteel/heaven/blob/main/03%20(4).jpg?raw=true')!important;
+}
+/* unsorted cave */
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+	content: url('https://github.com/ghostsofsteel/heaven/blob/main/04%20(1).jpg?raw=true')!important;
+}
+/* pride overview cave */
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+	content: url('https://github.com/ghostsofsteel/heaven/blob/main/06%20(3).jpg?raw=true')!important;
+}
+/* featured lioness image code by hok-z #41458 */
+.lionImage img:first-child {
+visibility: hidden;
+}
+.lionImage {
+background: url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png') no-repeat;
+}
+/* color behind den names */
+.cave-grid,
+.mound-grid {
+	background: var(--lightblue) !important;
+	box-shadow: var(--darkblue) 0px -35px 36px -28px inset,  1px 1px 5px var(--darkgray) !important;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 12px !important;
+	max-height:170px;
+	max-width:270px;
+	overflow: hidden;
+}
+/* da mounds */
+.mound-grid img {
+	background: url('https://github.com/ghostsofsteel/heaven/blob/main/07%20(1).jpg?raw=true');
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	padding-top: 70%;
+	padding-right: 100%;
+	max-height:150px;
+	border-radius: 10px !important;
+	opacity: 0.7;
+	transition: 1.5s;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+}
+.mound-grid img:hover{
+	opacity: 1;
+	transition: 0.8s !important;
+}
+/* links and hover colors */
+a:link {
+	color: var(--cream) !important;
+	transition: 0.8s !important;
+	font-size: 15px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+a:visited {
+	color: var(--cream) !important;
+	transition: 0.8s !important;
+	font-size: 15px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}	
+a:hover {
+	color: var(--darkpurple)  !important;
+	
+	transition: .7s!important;
+}
+/* lion and user avatar opacity */
+div#lion_image {
+	opacity: 0.75;
+	border-radius: 5% !important;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+	transition: 1.5s;
+}	
+div#lion_image:hover {
+	opacity: 1;
+	transition:1s;
+}	
+table#player img {
+	opacity: 0.75;
+	border-radius: 5% !important;
+	box-shadow:  1px 1px 5px var(--darkgray)!important;
+	transition: 1.5s;
+}
+table#player img:hover {
+	opacity: 1;
+	transition:1s;
+}
+/* lion and user avatar */
+div#lion_image {
+	border-radius: 5% !important;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-left: 6px;
+}
+
+ #player.table {
+    border-radius: 5%;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+
+.feature {
+	background: var(--lightwhite) !important;
+	color: var(--darkblue)!important;
+	border: 1px solid var(--darkpink) !important;
+	box-shadow: var(--cream60) 0px -50px 36px -28px inset !important;
+	border-radius: 10px !important;
+}
+/* topbar */
+.topbar {
+	background: var(--lightpink);
+	border: 0px ridge;
+	border-top: none;
+	color: var(--lightblue) !important;
+	font-size: 20px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px;
+	box-shadow: var(--darkpink) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	font-family: "Prata", serif;
+}
+.topbar a:link{
+color: var(--darkblue) !important;
+}
+.topbar a:visited{
+color: var(--darkblue) !important;
+}
+.topbar a:hover{
+color: var(--lightblue) !important;
+}
+/*navbar*/
+.navbar {
+	background: var(--lightpurple);
+	border-bottom: 0px ridge !important;
+	border-radius: 10px;
+	box-shadow: var(--darkpurple) 0px -40px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.navbar-default .navbar-nav > li > a {
+	background:rgba(120, 157, 182, .0);
+	font-size: 20px !important;
+	color: var(--lightpink) !important;
+	box-shadow: var(--cream60) 0px 0px 36px -28px inset !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	background:var(--lightblue);
+	color: var(--cream) !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 20px;
+	box-shadow: var(--darkblue) 0px -50px 36px -48px inset !important;
+	transition: 0.7s!important;
+}
+/* right side of main panel/main background color */
+.container.main {
+	background: var(--lightblue50);
+	border-left: 0px ridge;
+	border-right: 0px ridge;
+	border-bottom: 0px ridge;
+	border-radius: 10px;
+	box-shadow: var(--darkblue70) 0px 30px 90px 30px inset, 0px 0px 5px var(--darkgray) !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+/* left side of main panel */
+.col-md-9 {
+	background: none;
+	border-right: none;
+    color:var(--lightpink)!important;
+}
+/* home and den breadcrumb */
+.breadcrumb {
+	background: var(--cream) !important;
+	border: 0px ridge !important;
+	border-radius: 5px;
+	text-shadow: 1px 1px 2px var(--darkgray)!important;
+	box-shadow: var(--lightpurple) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.breadcrumb .active {
+	color:var(--lightblue) ;
+	font-size: 18px !important;
+}
+input[type="submit"] {
+	background: var(--darkpurple)!important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: var(--lightblue)!important;
+	text-shadow: 1px 1px 1px var(--darkgray)!important;
+	box-shadow: var(--lightpurple) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+input[type="submit"]:hover {
+	background: var(--darkblue) !important;
+	border: 0px ridge;
+	color: var(--cream)!important;
+	border-radius: 10px !important;
+	box-shadow: var(--darkpink) 0px -10px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+/*bookmark button */
+input.floatright{
+	background: var(--darkblue)!important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: var(--lightpink)!important;
+	text-shadow: 1px 1px 2px var(--darkgray)!important;
+	box-shadow: var(--lightblue) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+input.floatright:hover{
+	background: var(--darkblue) !important;
+	border: 0px ridge;
+	color: var(--cream)!important;
+	border-radius: 10px !important;
+	box-shadow: var(--darkpink) 0px -10px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+/* switch account button */
+button.button {
+	background: var(--darkpurple)!important;
+	border:0px ridge;
+	border-radius: 10px !important;
+	color: var(--lightblue);
+	font-size: 18px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray) !important;
+	box-shadow: var(--lightpurple) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+button.button:hover {
+	background: var(--darkblue)!important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: var(--cream);
+	font-size: 18px !important;
+	box-shadow: var(--darkpink) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	transition: .7s!important;
+}
+
+
+/*code by hok-z #170947*/
+#commentBox {
+	background: var(--darkpurple) !important;
+	box-shadow: var(--lightpurple) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border: var(--lightblue)!important;
+}
+::placeholder {
+	color: var(--lightblue) !important;
+}
+div.comment {
+	background: var(--lightblue);
+	box-shadow: var(--darkblue70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	font-weight: bold;
+	color: var(--darkblue) !important;
+}
+input#comment {
+	background: var(--lightpink) !important;
+	color: var(--lightblue) !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset;
+	border-radius: 10px !important;
+}
+select {
+	background: var(--lightpink) !important;
+	color: var(--cream) !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset;
+	border-radius: 10px !important;
+}
+small.text-muted {
+	color: var(--darkpurple);
+}
+small.text-muted a {
+	color: var(--lightpurple);
+}
+input[type="button"].bad {
+	background: var(--lightpink) !important;
+	border-radius: 10px !important;
+}
+/* alerts */
+.alert {
+	background: var(--lightpink);
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	float: none;
+	color: var(--darkblue) !important;
+	box-shadow: var(--lightpurple70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.alert-warning{
+	background: var(--lightpink);
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	float: none;
+	color: var(--lightpurple) !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+.alert-danger {
+	background: var(--lightpink) !important;
+	text-align: center;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	float: none;
+	color: var(--darkblue)!important;
+	box-shadow: var(--lightpurple70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+/* achievement panels */
+div.feature,
+div.left {
+	background:  var(--lightblue70) !important;
+	box-shadow: var(--darkblue50) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	color: var(--lightpink)!important;
+	border: none!important;
+	border-radius: 10px !important;
+	overflow:hidden;
+}
+/* energy bar, bookmarks and achievemnts */
+.panel {
+	background: var(--lightblue) !important;
+	border: 0px ridge !important;
+	border-radius: 10px;
+	color:var(--cream)!important;
+	box-shadow: var(--darkblue70) 0px -40px 30px -25px inset, 1px 1px 5px var(--darkgray) !important;
+}
+ /* text of the energy bar */
+.progress div {
+	color: var(--lightpurple) !important;
+	font-size: 13px !important;
+	text-shadow: 1px 1px 1px var(--darkgray) !important;
+}
+/* the back of the energy bar */
+.progress {
+	background: linear-gradient(var(--darkblue), var(--darkpink));
+	box-shadow:1px 1px 5px var(--darkgray) !important;
+	border-radius: 20px;
+}
+/* energy bar */
+.progress-bar-warning {
+   background: linear-gradient(var(--cream), var(--darkpurple))!important;
+}
+/* hunger bar */
+.progress-bar-danger {
+    background: linear-gradient(var(--lightblue), var(--darkblue))!important;
+}
+/* xp bar */
+.progress-bar-success {
+    background: linear-gradient(var(--cream), var(--darkpurple))!important;
+}
+/* impression bar (controls all other bars) */
+.progress-bar {
+    background: linear-gradient(var(--lightblue), var(--darkblue));
+	border-radius: 20px;
+	box-shadow:1px 1px 5px var(--darkgray) !important;
+}
+/* achievement bar */
+div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
+	background: linear-gradient(var(--cream), var(--darkpurple))!important;
+}
+/* account standing bar */
+th > div > div.progress-bar.progress-bar-success {
+    background: linear-gradient(var(--cream), var(--darkpurple))!important;
+}
+/*___'s den and headers */
+h1 {
+	color: var(--cream);
+	font-size: 72px;
+	font-family: "Prata", serif;
+	text-align: center;
+}
+h2 {
+	color: var(--lightpurple);
+	font-size: 56px;
+	text-align: center;
+}
+h3 {
+	color: var(--cream) !important;
+	font-size: 24px !important
+}
+/* main lion info table */
+/* background color */
+.table {
+	background: var(--cream60);
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+	border-radius: 10px !important;
+	color: var(--darkblue) !important;
+	border-collapse: separate;
+	box-shadow:  var(--darkpurple) 0px -80px 120px -28px inset,1px 1px 5px var(--darkgray);
+}
+.table a:link
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
+}
+.table a:visited
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
+}
+
+
+.table a:active
+{
+	color:var(--lightpink)!important;
+	transition: 0.5s!important;
+} 
+.table a:hover
+ {
+	color:var(--darkblue)!important;
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+}
+/* colors of the headers */
+
+
+.top,
+.bottom,
+th {
+	background: var(--lightblue) !important;
+	box-shadow: var(--darkblue) 0px -30px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	color: var(--cream) !important;
+	font-size: 18px !important;
+	border-radius: 10px;
+}
+/* lower block of info */
+.table .left {
+	background: var(--lightpurple70)!important;
+	box-shadow: var(--darkpurple) 0px -50px 36px -28px inset !important;
+	border-radius: 10px;
+}
+/* color behind lower block */
+input,
+select,
+textarea {
+	background: var(--lightpink) !important;
+	border: 0px ridge !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	color: var(--cream) !important;
+	text-shadow: 1px 1px 2px var(--darkgray) !important;
+}
+/* level stats branch territory color backing */
+.inner-table .left {
+	background: var(--lightpurple70) !important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+}
+/* right collumns colors */
+.inner-table .right {
+	background: var(--lightblue)!important;
+	box-shadow: var(--darkblue) 0px -60px 50px -33px inset, 1px 1px 5px var(--darkgray) !important;
+	color: var(--lightpink) !important;
+	border-radius: 10px;
+}
+.inner-table .right a:link{
+	color: var(--lightpurple) !important;
+}
+.inner-table .right a:visited{
+	color: var(--lightpurple) !important;
+}
+.inner-table .right a:active{
+	color: var(--lightpink) !important;
+}
+.inner-table .right a:hover{
+	color: var(--darkpink) !important;
+}
+.right_odd {
+	background: none
+	box-shadow: var(--darkblue70) 0px -50px 36px -28px inset !important;
+	border-radius:10px;
+}
+/* account options */
+.item-header {
+	background: var(--lightblue) !important;
+	border-radius: 10px;
+	box-shadow: var(--darkblue70) 0px -50px 36px -28px inset !important;
+	color: var(--lightpurple)  !important;
+	font-size: 15px !important;
+}
+.item {
+	background: var(--lightpink)!important;
+	box-shadow: var(--darkpink70) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+}
+  .item-footer {
+    background: var(--lightblue);
+  }
+/*account option buttons*/
+div.slider.round {
+	background: var(--darkblue) !important
+}
+div.slider.round::before {
+	background: var(--lightblue) !important
+}
+/* boxes */
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	display: flex;
+	justify-content: center
+}
+.Box1 {
+	float: left;
+	background: var(--cream60);
+	color: var(--lightpurple) ;
+	padding: 15px;
+	border: 0 ridge !important;
+	box-shadow:var(--darkpink50) 0px -100px 36px -28px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: auto;
+	margin-bottom: 25px;
+	transition:  1s;
+}
+/* size when hovering */
+.Box1:hover {
+	overflow-y: auto;	
+}
+.Box2 {
+	float: left;
+	background: var(--cream60);
+	color: var(--lightpurple)  ;
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow: var(--darkpink50) 0px -125px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition:  1s; 
+}
+.Box2:hover {
+	overflow-y: auto;	
+}
+.Box3 {
+	float: center;
+	background: var(--cream60);
+	color: var(--lightpurple)  ;
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow:var(--darkpink50) 0px -70px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 120px;
+	width: 450px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: 1.5s;
+}
+.Box3:hover {
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-shadow:var(--lightblue50) 0px -275px 360px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	width: 750px;
+	height: 600px;
+	transition: 1.8s!important;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+/* background of scroll bar */
+::-webkit-scrollbar-track {
+	background: var(--lightblue);
+	box-shadow:var(--darkblue50) 0px -150px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+}
+/*thumb of scroll bar */
+::-webkit-scrollbar-thumb {
+	background: var(--lightpurple);
+	box-shadow:var(--darkpurple) 0px -10px 50px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	border-radius: 10px;
+}
+
+/* Codes made by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329 
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+/* MEMBER ONLINE */
+.member-online {
+    background: rgba(207,207,207,0);
+    content:url('https://static.lioden.com/images/items/Other/crunchyworm.png')!important;
+	border-radius: 0px;
+	  width:70px!important;
+    height:70px;
+	margin:-10px;
+	margin-left:10px;
+}
+/* MEMBER OFFLINE */
+.member-offline {
+    background: rgba(207,207,207,0);
+    content:url('https://static.lioden.com/images/items/Other/crunchyworm.png')!important;
+	border-radius: 0px;
+    width:70px!important;
+    height:70px;
+	margin:-10px;
+	margin-left:10px;
+	filter: saturate(0%);
+}
+/* beetle book adjustment code by tawnyCollar#251887. may be used in commissions, personal CSS, and free CSS. do NOT remove credit, or reupload claiming it as your own. */
+/* change beetle book image */
+img[src$="den_ancestors.png"] {
+	background:none!important; 
+   content:url('https://static.lioden.com/images/dynamic/backgrounds/perdition.png')!important;
+}
+img[src$="den_ancestorsfem.png"] {
+	background:none!important; 
+	    content:url('https://static.lioden.com/images/dynamic/backgrounds/denofperdition.png')!important;
+}
+img[src$="den_achievements.png"] {
+	background:none!important; 
+        content:url('https://static.lioden.com/images/dynamic/backgrounds/7thdemonicdepths.png')!important;
+}
+img[src$="den_showcase.png"] {
+	background:none!important; 
+      content:url('https://static.lioden.com/images/dynamic/backgrounds/HellSPikes.png')!important;
+	
+}
+img[src$="den_beetlebook.png"] {
+	background:none!important; 
+        content:url('https://static.lioden.com/images/dynamic/backgrounds/haloween_02.png');
+}
+
+/* fits all elements on one line */
+body > div.container.main > div > div.col-md-9.col-xs-12 > center {
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+}
+.dynastylist {
+    flex: 1 1 auto;
+    max-width: 20%; 
+    box-sizing: border-box; 
+}
+/* resizes all images to fit the new layout */
+.dynastylist img {
+    height: 100%!important;
+	 width: 100%!important;
+	border-radius: 10px;
+}
+
+/* font option 1 - apply font size to all headers at once.  */
+.dynastylist h3 {
+	word-break: break-all;
+    font-size: 15px !important; /* Adjust font size for all headers */
+}
+
+/* TIME DAY */
+img[src$="day.png"] {
+    content:url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_homunculus.png')!important;
+    width:50px!important;
+	margin-left:-40px;
+}
+/* TIME NIGHT */
+img[src$="night.png"] {
+    content:url('https://static.lioden.com/images/items/Other/vultureegg.png')!important;
+    width:50px!important;
+	margin-left:-40px;
+}
+/* SEASON */
+/* DRY SEASON */
+img[src$="icon-season-dry.png"] {
+    content:url('https://static.lioden.wiki/images/emotes/currency/beetleblood.png')!important;
+    width:50px!important;
+}
+/* WET SEASON */
+img[src$="icon-season-wet.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shardofevil.png')!important;
+    width:50px!important;
+}
+/* GB/SB ICONS */
+/* GOLD BEETLE */
+img[src$="icon-beetle-gold.png"] {
+    content:url('https://static.lioden.wiki/images/emotes/currency/nephelinefeather.png')!important;
+    width:20px!important;
+}
+/* SILVER BEETLE */
+img[src$="icon-beetle-silver.png"] {
+    content:url('https://static.lioden.wiki/images/emotes/currency/demonicscale.png')!important;
+    width:20px!important;
+}
+/* EVENT CURRENCY */
+/* JAN */
+img[src$="dermestid.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+img[src$="icon_doubloon.png"] {
+	    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+	    width:50px!important;
+	}
+/* FEB */
+img[src$="HeartShell.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* MARCH */
+img[src$="beetlerhino.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* APRIL */
+img[src$="easteregg.png"] {
+	content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+	width:50px!important;
+}
+/* MAY */
+img[src$="beetlemant.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* JUNE */
+img[src$="khepri.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* JULY MS */
+img[src$="shard.png"] {
+    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+    width:50px!important;
+}
+/* JULY AC */
+img[src$="axion.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* AUG CB */
+img[src$="beetlecarrion.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* AUG DB */
+img[src$="bone.png"] {
+    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+    width:50px!important;
+}
+/* SEPT JB */
+img[src$="beetlejewel.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* SEPT ET */
+img[src$="eldritch.png"] {
+    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+    width:50px!important;
+}
+/* OCT BB */
+img[src$="beetleblood.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* OCT NF */
+img[src$="nephelinefeather.png"] {
+    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+    width:50px!important;
+}
+/* OCT DS */
+img[src$="demonicscale.png"] {
+    content:url('https://static.lioden.com/images/items/Other/angelicblessing.png')!important;
+    width:50px!important;
+}
+/* NOV */
+img[src$="scarabbeetle.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+/* DEC */
+img[src$="stinkbug.png"] {
+    content:url('https://static.lioden.com/images/items/Other/shadowofdeath.png')!important;
+    width:50px!important;
+}
+
+
+
+
+/* SIDEBAR ARROWS */
+/* TOP */
+div.col-xs-6 > a > h3 > div {
+    content:url('https://www.lioden.com/images/items/Other/demonicbase.png');
+    position:absolute;
+    width:70px;
+	margin-right: 50px;	
+	right: -50px;
+	margin-top: -40px;
+	z-index:1;
+}
+ 
+/* MIDDLE */
+ 
+div.col-xs-5> a:nth-child(1) > h3 > div {
+    content:url('https://www.lioden.com/images/items/Other/demonicmarks.png');
+    position:absolute;
+    width:70px;
+	margin-right: 50px;	
+	right: -50px;
+    margin-top: -40px;
+	z-index:2;
+}
+ 
+/* BOTTOM */
+div.col-xs-5> a:nth-child(3) > h3 > div {
+    content:url('https://www.lioden.com/images/items/Other/appmanedemonic.png');
+    position:absolute;
+    width:70px;
+	margin-right: 50px;	
+	right: -50px;
+	margin-top: -40px;
+	z-index:3;
+}
+
+
+.pun-credit {
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	color: var(--white) !important;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	background: var(--lightpurple70);
+	background: linear-gradient(90deg,var(--lightpurple70) 0%, var(--lightpink70) 100%);
+	padding: 5px;
+}
+.pun-credit a {
+	color: var(--white) !important;
+}
+.pun-credit a:hover {
+	opacity: 1 !important;
+}
+.pun-credit:hover {
+	opacity: 1;
+	transition: 2s;
+}
+.pun-table {
+	width: 579px;
+	background: url('https://github.com/ghostsofsteel/heaven/blob/main/02%20(3).jpg?raw=true') top center no-repeat;
+	background-size:contain;
+	box-shadow: 1px 1px 5px var(--darkgray)!important;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+.pun-spacer {
+	background: none;
+	width: 0px;	
+}
+.pun-content {
+	background: var(--lightblue70) !important;
+	box-shadow:var(--darkpink50) 0px -100px 80px 0px inset, 1px 1px 5px var(--darkgray) !important;
+	text-align: left;
+	height: 226px;
+	overflow-x: hidden;
+	width: 280px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 17px;
+	margin-left:260px;
+}
+.pun-content h3 {
+	margin: 0 0 10px 0;
+	color: var(--lightpurple)!important;
+	border-bottom: 1px solid var(--darkpink);
+	text-align: left;
+}
+.pun-content a {
+	color: var(--lightpink)!important;
+	font-weight: normal !important;
+	opacity: 0.7;
+}
+.pun-content a:hover {
+	opacity: 1 !important;
+}
+.pun-links {
+	background: linear-gradient(90deg, var(--cream) 0%, var(--lightpurple) 100%);
+	box-shadow: 1px 1px 5px var(--darkgray)!important;
+	color: var(--darkpurple);
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+}
+.pun-links a {
+	color: var(--white) !important;
+}
+.pun-links a:link {
+	color: var(--lightpink) !important;
+	transition: 0.8s !important;
+	font-size: 15px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+.pun-links a:visited {
+	color: var(--lightpink) !important;
+	transition: 0.8s !important;
+	font-size: 15px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+.pun-links a:hover {
+	color: var(--darkpink) !important;
+	transition: 0.8s !important;
+	font-size: 15px !important;
+	text-shadow: 1px 1px 1.5px var(--darkgray);
+}
+.pun-title {
+	text-align: center;
+	color: var(--white);
+	font-size: 64px;
+	letter-spacing: 2px;
+	font-family: Gideon Roman;
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+.pun-graphics {
+	background: none;
+	color: var(--darkgray);
+	text-align: center;
+	border-radius: 5px;
+}
+.pun-graphics a {
+	color: var(--lightwhite) !important;
+}
